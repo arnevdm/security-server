@@ -1,6 +1,6 @@
-# security-server-exercise
+# security-server
 
-This works with the security-client-exercise repo
+This works with the security-client repo
 
 
 To run the server:
