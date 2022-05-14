@@ -10,13 +10,14 @@ const app = express()
 app.use(cors())
 app.use(helmet())
 app.use(express.json()) //you no longer need body-parser package...it comes built into expressJS now
-app.use(morgan('tiny'))
+// app.use(morgan('tiny'))
+// app.use(morgan('combined'))
+
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.post('/secret', (req, res) => {
   const { userInput } = req.body;
-  console.log(userInput);
   if (userInput) {
     winston.log('info', 'user input: ' + userInput);
     res.status(200).json('success');
