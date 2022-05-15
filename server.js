@@ -10,7 +10,6 @@ const app = express()
 app.use(cors())
 app.use(helmet())
 app.use(express.json()) //you no longer need body-parser package...it comes built into expressJS now
-// app.use(morgan('tiny'))
 // app.use(morgan('combined'))
 
 
